@@ -1,0 +1,16 @@
+{
+  "name": "unpaywall-journals-redirecter",
+  "version": "0.1.0",
+  "engines": {
+    "node": "9.8.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+  }
+}
