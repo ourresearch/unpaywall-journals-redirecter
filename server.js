@@ -12,7 +12,7 @@ app.use(serveStatic(__dirname + "/dist"));
 
 
 app.get('*', function (req, res) {
-    res.redirect("https://get-unsub.org" + req.path)
+    res.redirect("https://unsub.org" + req.path)
 });
 
 const port = process.env.PORT || 5000;
