@@ -12,7 +12,8 @@ app.use(serveStatic(__dirname + "/dist"));
 
 
 app.get('*', function (req, res) {
-    res.redirect("https://unsub.org" + req.path)
+    const redirectUrl = "https://unsub.org" + req.path;
+    res.redirect(301, redirectUrl);
 });
 
 const port = process.env.PORT || 5000;
