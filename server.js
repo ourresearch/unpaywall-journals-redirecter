@@ -12,7 +12,7 @@ app.use(serveStatic(__dirname + "/dist"));
 
 
 app.get('*', function (req, res) {
-    const redirectUrl = "https://unsub.org" + req.path;
+    const redirectUrl = "https://unsub.org" + req.originalUrl;
     res.redirect(301, redirectUrl);
 });
 
